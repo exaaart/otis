@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ORIS DENTAL — современная стоматология (концепт)</title>
+    <meta name="description" content="ORIS DENTAL — концепт сайта современной стоматологической клиники: услуги, технологии, этапы визита и онлайн-запись." />
+    <meta name="theme-color" content="#0C2A55" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+    <!-- ============ Header ============ -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a class="logo" href="#top" aria-label="ORIS DENTAL — на главную">
+          <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <circle cx="16" cy="16" r="13.5" fill="none" stroke="currentColor" stroke-width="2" />
+            <path class="logo__tooth" d="M10.6 12.6c0-1.8 1.5-2.9 3.3-2.9.9 0 1.5.3 2.1.6.6-.3 1.2-.6 2.1-.6 1.8 0 3.3 1.1 3.3 2.9 0 1.5-.5 2.6-.9 4-.5 2.2-.5 6.1-1.7 6.1-1 0-.9-3-1.8-3s-.8 3-1.8 3c-1.2 0-1.2-3.9-1.7-6.1-.4-1.4-.9-2.5-.9-4Z" />
+          </svg>
+          <span class="logo__word">ORIS<span>DENTAL</span></span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <ul class="nav__list">
+            <li><a href="#about">О клинике</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#tech">Технологии</a></li>
+            <li><a href="#team">Специалисты</a></li>
+            <li><a href="#faq">Вопросы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <a class="header__phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
+          <a class="btn btn--primary btn--sm" href="#booking">Записаться</a>
+          <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileMenu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu" hidden>
+      <nav aria-label="Мобильная навигация">
+        <ul>
+          <li><a href="#about">О клинике</a></li>
+          <li><a href="#directions">Направления</a></li>
+          <li><a href="#services">Услуги</a></li>
+          <li><a href="#tech">Технологии</a></li>
+          <li><a href="#team">Специалисты</a></li>
+          <li><a href="#visit">Как проходит визит</a></li>
+          <li><a href="#faq">Вопросы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__foot">
+        <a class="btn btn--primary" href="#booking">Записаться на приём</a>
+        <a class="mobile-menu__phone" href="tel:+70000000000">+7 (000) 000-00-00</a>
+      </div>
+    </div>
+
+    <main id="main">
+      <!-- ============ 1. Hero ============ -->
+      <section class="hero" id="top" aria-labelledby="heroTitle">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="concept-pill" data-reveal>
+              <span aria-hidden="true"></span>Концепт-проект: данные на сайте условные
+            </p>
+            <h1 class="hero__title" id="heroTitle" data-reveal>Забота о&nbsp;здоровье улыбки начинается с&nbsp;доверия</h1>
+            <p class="hero__lead" data-reveal>Современная стоматология, внимательный подход и&nbsp;продуманный комфорт на&nbsp;каждом этапе лечения.</p>
+            <div class="hero__cta" data-reveal>
+              <a class="btn btn--primary btn--lg" href="#booking">Записаться на&nbsp;приём</a>
+              <a class="btn btn--ghost btn--lg" href="#services">Наши услуги</a>
+            </div>
+            <ul class="hero__points" data-reveal>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 9.5 17 19 7.5" /></svg>
+                План и&nbsp;стоимость обсуждаем до&nbsp;начала лечения
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 9.5 17 19 7.5" /></svg>
+                Цифровая диагностика и&nbsp;сканирование
+              </li>
+            </ul>
+            <figure class="photo hero__photo" data-variant="reception" data-reveal>
+              <img src="/images/clinic-reception.jpg" alt="Зона ресепшн клиники" />
+              <figcaption class="photo__ph">
+                <span class="photo__ph-title">Фото интерьера клиники</span>
+                <span class="photo__ph-path">/images/clinic-reception.jpg</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="hero__visual" data-reveal>
+            <div class="stage" id="toothStage">
+              <svg class="stage__rings" viewBox="0 0 600 600" aria-hidden="true">
+                <circle cx="300" cy="300" r="120" />
+                <circle cx="300" cy="300" r="180" />
+                <circle cx="300" cy="300" r="240" />
+                <circle cx="300" cy="300" r="296" />
+                <path d="M300 4v28M300 568v28M4 300h28M568 300h28" />
+              </svg>
+              <div class="stage__canvas" id="toothCanvas"></div>
+              <div class="stage__hotspots" id="toothHotspots"></div>
+
+              <div class="stage__loader" id="toothLoader" role="status">
+                <span class="stage__spinner" aria-hidden="true"></span>
+                Загружаем 3D-модель
+              </div>
+
+              <!-- Заглушка, если WebGL недоступен -->
+              <div class="stage__fallback" id="toothFallback" hidden>
+                <svg viewBox="0 0 200 260" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="fbEnamel" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#ffffff" />
+                      <stop offset="1" stop-color="#e3ecef" />
+                    </linearGradient>
+                  </defs>
+                  <path fill="url(#fbEnamel)" stroke="#bccbd3" stroke-width="1.5" d="M100 22c-16 0-24 8-38 8-22 0-40 16-40 42 0 22 8 34 14 56 8 30 10 106 30 106 16 0 12-62 34-62s18 62 34 62c20 0 22-76 30-106 6-22 14-34 14-56 0-26-18-42-40-42-14 0-22-8-38-8Z" />
+                </svg>
+                <p>3D-просмотр недоступен в этом браузере</p>
+              </div>
+
+              <div class="stage__info" id="toothInfo" aria-live="polite" hidden>
+                <button class="stage__info-close" type="button" aria-label="Закрыть пояснение">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+                </button>
+                <h3 id="toothInfoTitle"></h3>
+                <p id="toothInfoText"></p>
+              </div>
+
+              <div class="stage__bar" role="toolbar" aria-label="Управление 3D-моделью">
+                <div class="seg" role="group" aria-label="Ракурс">
+                  <button type="button" class="seg__btn is-active" data-view="overview">Обзор</button>
+                  <button type="button" class="seg__btn" data-view="top">Сверху</button>
+                  <button type="button" class="seg__btn" data-view="roots">Корни</button>
+                </div>
+                <button type="button" class="icon-btn" data-xray aria-pressed="false" title="Показать внутреннее строение">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" /><path d="M12 3.5v17M3.5 12h17" opacity=".55" /></svg>
+                  <span>Внутри</span>
+                </button>
+                <div class="zoom" role="group" aria-label="Масштаб">
+                  <button type="button" class="icon-btn icon-btn--square" data-zoom="in" aria-label="Приблизить">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 6v12M6 12h12" /></svg>
+                  </button>
+                  <button type="button" class="icon-btn icon-btn--square" data-zoom="out" aria-label="Отдалить">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12" /></svg>
+                  </button>
+                  <button type="button" class="icon-btn icon-btn--square" data-reset aria-label="Сбросить вид">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 12a7.5 7.5 0 1 0 2.2-5.3M4.5 4.5v3.8h3.8" /></svg>
+                  </button>
+                </div>
+              </div>
+              <p class="stage__hint" id="toothHint">Вращайте модель мышью или пальцем. Нажмите на&nbsp;точку, чтобы узнать больше.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2. О клинике ============ -->
+      <section class="section about" id="about" aria-labelledby="aboutTitle">
+        <div class="container">
+          <div class="about__grid">
+            <div class="about__lead">
+              <h2 class="h2" id="aboutTitle">О клинике</h2>
+              <p class="statement">Мы&nbsp;строим лечение вокруг понятного плана: вы&nbsp;знаете, что будет сделано, зачем и&nbsp;в&nbsp;каком порядке.</p>
+            </div>
+            <ul class="principles">
+              <li>
+                <h3>Объясняем простыми словами</h3>
+                <p>Показываем снимки, рассказываем о&nbsp;вариантах лечения и&nbsp;помогаем выбрать подходящий.</p>
+              </li>
+              <li>
+                <h3>Бережём ваше время</h3>
+                <p>Планируем визиты так, чтобы лечение заняло разумное количество приёмов без лишних ожиданий.</p>
+              </li>
+              <li>
+                <h3>Думаем о&nbsp;комфорте</h3>
+                <p>Спокойная атмосфера, местная анестезия и&nbsp;паузы, когда они нужны. На&nbsp;каждом этапе можно задать вопрос.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="about__photos">
+            <figure class="photo photo--wide" data-variant="hall">
+              <img src="/images/clinic-hall.jpg" alt="Холл клиники" loading="lazy" />
+              <figcaption class="photo__ph">
+                <span class="photo__ph-title">Фото холла клиники</span>
+                <span class="photo__ph-path">/images/clinic-hall.jpg</span>
+              </figcaption>
+            </figure>
+            <figure class="photo photo--tall" data-variant="cabinet">
+              <img src="/images/clinic-cabinet.jpg" alt="Лечебный кабинет" loading="lazy" />
+              <figcaption class="photo__ph">
+                <span class="photo__ph-title">Фото лечебного кабинета</span>
+                <span class="photo__ph-path">/images/clinic-cabinet.jpg</span>
+              </figcaption>
+            </figure>
+          </div>
+          <p class="note">Тексты и&nbsp;изображения — концептуальные. При адаптации под конкретную клинику используется только проверенная информация, предоставленная клиникой.</p>
+        </div>
+      </section>
+
+      <!-- ============ 3. Направления ============ -->
+      <section class="section directions" id="directions" aria-labelledby="directionsTitle">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2" id="directionsTitle">Основные направления</h2>
+            <p>Выберите направление, чтобы увидеть подходящие услуги и&nbsp;подробности о&nbsp;том, как проходит лечение.</p>
+          </div>
+          <ul class="dir-grid" id="directionsGrid"></ul>
+        </div>
+      </section>
+
+      <!-- ============ 4. Услуги ============ -->
+      <section class="section services" id="services" aria-labelledby="servicesTitle">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2" id="servicesTitle">Услуги</h2>
+            <p>Коротко о&nbsp;каждой услуге: когда она нужна и&nbsp;как проходит. Стоимость врач называет после осмотра.</p>
+          </div>
+          <div class="services__layout">
+            <nav class="filters" aria-label="Фильтр услуг по направлениям">
+              <ul class="filters__list" id="serviceFilters"></ul>
+            </nav>
+            <div class="services__list">
+              <p class="services__count" id="servicesCount" aria-live="polite"></p>
+              <ul class="service-grid" id="serviceGrid"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 5. Технологии ============ -->
+      <section class="section tech" id="tech" aria-labelledby="techTitle">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2" id="techTitle">Технологии и&nbsp;оборудование</h2>
+            <p>Техника нужна не&nbsp;ради впечатления: она помогает точнее увидеть проблему и&nbsp;сделать лечение спокойнее.</p>
+          </div>
+
+          <div class="showcase">
+            <article class="showcase__row">
+              <figure class="photo" data-variant="scan">
+                <img src="/images/tech-3d-scan.jpg" alt="Оборудование для 3D-диагностики" loading="lazy" />
+                <figcaption class="photo__ph">
+                  <span class="photo__ph-title">Фото оборудования для 3D-диагностики</span>
+                  <span class="photo__ph-path">/images/tech-3d-scan.jpg</span>
+                </figcaption>
+              </figure>
+              <div class="showcase__text">
+                <h3>Объёмная диагностика</h3>
+                <p>3D-снимок показывает зубы, корни и&nbsp;кость со&nbsp;всех сторон. Он&nbsp;нужен не&nbsp;всегда — чаще всего перед имплантацией, лечением каналов или удалением зуба мудрости.</p>
+                <ul class="ticks">
+                  <li>Врач видит то, что не&nbsp;заметно при осмотре</li>
+                  <li>Вы&nbsp;видите на&nbsp;экране то&nbsp;же, что и&nbsp;врач</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="showcase__row">
+              <figure class="photo" data-variant="intraoral">
+                <img src="/images/tech-intraoral.jpg" alt="Внутриротовой сканер" loading="lazy" />
+                <figcaption class="photo__ph">
+                  <span class="photo__ph-title">Фото внутриротового сканера</span>
+                  <span class="photo__ph-path">/images/tech-intraoral.jpg</span>
+                </figcaption>
+              </figure>
+              <div class="showcase__text">
+                <h3>Цифровые слепки</h3>
+                <p>Вместо слепочной массы — компактный сканер. Он&nbsp;за&nbsp;несколько минут создаёт точную цифровую модель зубов для коронок, виниров и&nbsp;элайнеров.</p>
+                <ul class="ticks">
+                  <li>Без неприятной массы во&nbsp;рту</li>
+                  <li>Модель можно сразу показать и&nbsp;обсудить</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="showcase__row">
+              <figure class="photo" data-variant="microscope">
+                <img src="/images/tech-microscope.jpg" alt="Стоматологический микроскоп" loading="lazy" />
+                <figcaption class="photo__ph">
+                  <span class="photo__ph-title">Фото стоматологического микроскопа</span>
+                  <span class="photo__ph-path">/images/tech-microscope.jpg</span>
+                </figcaption>
+              </figure>
+              <div class="showcase__text">
+                <h3>Лечение под увеличением</h3>
+                <p>Микроскоп помогает врачу работать точнее: например, находить все каналы зуба и&nbsp;аккуратно сохранять здоровые ткани.</p>
+                <ul class="ticks">
+                  <li>Больше шансов сохранить собственный зуб</li>
+                  <li>Аккуратная работа на&nbsp;мелких деталях</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="showcase__row">
+              <figure class="photo" data-variant="sterile">
+                <img src="/images/tech-sterile.jpg" alt="Зона стерилизации инструментов" loading="lazy" />
+                <figcaption class="photo__ph">
+                  <span class="photo__ph-title">Фото зоны стерилизации</span>
+                  <span class="photo__ph-path">/images/tech-sterile.jpg</span>
+                </figcaption>
+              </figure>
+              <div class="showcase__text">
+                <h3>Стерильность на&nbsp;каждом этапе</h3>
+                <p>Инструменты проходят многоступенчатую обработку и&nbsp;хранятся в&nbsp;герметичных пакетах, которые открывают при вас. Расходные материалы — одноразовые.</p>
+                <ul class="ticks">
+                  <li>Понятные правила обработки</li>
+                  <li>Пакеты с&nbsp;инструментами вскрывают при пациенте</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 6. Специалисты ============ -->
+      <section class="section team" id="team" aria-labelledby="teamTitle">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2" id="teamTitle">Специалисты</h2>
+            <p>Каждый врач отвечает за&nbsp;своё направление, а&nbsp;сложные случаи команда обсуждает вместе.</p>
+          </div>
+          <ul class="team-grid">
+            <li class="doctor">
+              <div class="doctor__photo" aria-hidden="true"><span>Фото специалиста</span></div>
+              <h3>Стоматолог-терапевт</h3>
+              <p>Лечение кариеса и&nbsp;каналов, реставрации, профилактические осмотры.</p>
+              <a class="link" href="#booking" data-book="checkup">Записаться на&nbsp;осмотр</a>
+            </li>
+            <li class="doctor">
+              <div class="doctor__photo" aria-hidden="true"><span>Фото специалиста</span></div>
+              <h3>Хирург-имплантолог</h3>
+              <p>Удаление зубов, имплантация и&nbsp;цифровое планирование операций.</p>
+              <a class="link" href="#booking" data-book="implant">Записаться на&nbsp;консультацию</a>
+            </li>
+            <li class="doctor">
+              <div class="doctor__photo" aria-hidden="true"><span>Фото специалиста</span></div>
+              <h3>Ортодонт</h3>
+              <p>Исправление прикуса брекетами и&nbsp;элайнерами у&nbsp;детей и&nbsp;взрослых.</p>
+              <a class="link" href="#booking" data-book="aligners">Записаться на&nbsp;консультацию</a>
+            </li>
+            <li class="doctor">
+              <div class="doctor__photo" aria-hidden="true"><span>Фото специалиста</span></div>
+              <h3>Детский стоматолог</h3>
+              <p>Адаптационные визиты, лечение и&nbsp;профилактика молочных зубов.</p>
+              <a class="link" href="#booking" data-book="kids-first">Записать ребёнка</a>
+            </li>
+          </ul>
+          <p class="note">Имена, фотографии, образование и&nbsp;опыт врачей публикуются только по&nbsp;данным клиники. В&nbsp;концепте показаны роли без вымышленных людей.</p>
+        </div>
+      </section>
+
+      <!-- ============ 7. Этапы ============ -->
+      <section class="section visit" id="visit" aria-labelledby="visitTitle">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="h2" id="visitTitle">Как проходит визит</h2>
+            <p>Пять шагов от&nbsp;заявки до&nbsp;результата. На&nbsp;любом из&nbsp;них можно остановиться и&nbsp;подумать.</p>
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step__num" aria-hidden="true">01</span>
+              <h3>Запись</h3>
+              <p>Оставляете заявку на&nbsp;сайте или звоните. Администратор подтверждает удобное время.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">02</span>
+              <h3>Консультация</h3>
+              <p>Врач расспрашивает о&nbsp;жалобах, проводит осмотр и&nbsp;при необходимости делает снимок.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">03</span>
+              <h3>План лечения</h3>
+              <p>Обсуждаете варианты, сроки и&nbsp;стоимость. Решение остаётся за&nbsp;вами.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">04</span>
+              <h3>Лечение</h3>
+              <p>Проходит по&nbsp;согласованному плану. Перед каждым этапом врач рассказывает, что будет делать.</p>
+            </li>
+            <li class="step">
+              <span class="step__num" aria-hidden="true">05</span>
+              <h3>Наблюдение</h3>
+              <p>Получаете рекомендации по&nbsp;уходу и&nbsp;напоминание о&nbsp;следующем профилактическом визите.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ 8. FAQ ============ -->
+      <section class="section faq" id="faq" aria-labelledby="faqTitle">
+        <div class="container faq__grid">
+          <div class="faq__intro">
+            <h2 class="h2" id="faqTitle">Частые вопросы</h2>
+            <p>Не нашли ответ? Напишите вопрос в&nbsp;комментарии к&nbsp;заявке — администратор передаст его врачу.</p>
+            <a class="btn btn--ghost" href="#booking">Задать вопрос в&nbsp;заявке</a>
+          </div>
+          <div class="accordion" id="faqList"></div>
+        </div>
+      </section>
+
+      <!-- ============ 9. Запись ============ -->
+      <section class="section booking" id="booking" aria-labelledby="bookingTitle">
+        <div class="container booking__grid">
+          <div class="booking__intro">
+            <h2 class="h2" id="bookingTitle">Запись на&nbsp;приём</h2>
+            <p>Выберите услугу и&nbsp;удобное время. Администратор перезвонит, чтобы подтвердить запись и&nbsp;ответить на&nbsp;вопросы.</p>
+            <dl class="booking__facts">
+              <div>
+                <dt>Часы работы</dt>
+                <dd>Пн–Сб, 9:00–21:00</dd>
+              </div>
+              <div>
+                <dt>Телефон</dt>
+                <dd><a href="tel:+70000000000">+7 (000) 000-00-00</a></dd>
+              </div>
+            </dl>
+            <p class="booking__demo">Демо-форма: заявка никуда не&nbsp;отправляется и&nbsp;не&nbsp;сохраняется.</p>
+          </div>
+
+          <div class="form-card">
+            <form class="form" id="bookingForm" novalidate>
+              <div class="field">
+                <label for="fService">Услуга</label>
+                <div class="select">
+                  <select id="fService" name="service"></select>
+                </div>
+              </div>
+
+              <fieldset class="field">
+                <legend>Предпочтительная дата</legend>
+                <div class="days" id="dayPicker" role="radiogroup" aria-label="Дата визита"></div>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>Удобное время</legend>
+                <div class="slots" id="slotPicker" role="radiogroup" aria-label="Время визита"></div>
+                <label class="check check--inline">
+                  <input type="checkbox" name="anyTime" id="fAnyTime" />
+                  <span>Подойдёт любое время — подберите сами</span>
+                </label>
+              </fieldset>
+
+              <div class="form__row">
+                <div class="field">
+                  <label for="fName">Имя</label>
+                  <input id="fName" name="name" type="text" autocomplete="given-name" placeholder="Как к вам обращаться" required />
+                  <p class="field__error" id="fNameError"></p>
+                </div>
+                <div class="field">
+                  <label for="fPhone">Телефон</label>
+                  <input id="fPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required />
+                  <p class="field__error" id="fPhoneError"></p>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="fComment">Комментарий <span class="optional">необязательно</span></label>
+                <textarea id="fComment" name="comment" rows="3" placeholder="Что беспокоит или какой вопрос хотите задать врачу"></textarea>
+              </div>
+
+              <label class="check">
+                <input type="checkbox" name="consent" id="fConsent" required />
+                <span>Согласен на&nbsp;обработку персональных данных для записи на&nbsp;приём</span>
+              </label>
+              <p class="field__error" id="fConsentError"></p>
+
+              <button class="btn btn--primary btn--lg btn--block" type="submit">Отправить заявку</button>
+            </form>
+
+            <div class="form-done" id="bookingDone" hidden tabindex="-1">
+              <div class="form-done__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 12.5 9.5 17 19 7.5" /></svg>
+              </div>
+              <h3>Заявка принята</h3>
+              <p id="bookingSummary"></p>
+              <p class="form-done__demo">Это демо-версия: данные никуда не&nbsp;отправлены. В&nbsp;рабочей версии администратор перезвонит для подтверждения.</p>
+              <button class="btn btn--ghost" type="button" id="bookingReset">Оформить ещё одну заявку</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 10. Контакты ============ -->
+      <section class="section contacts" id="contacts" aria-labelledby="contactsTitle">
+        <div class="container contacts__grid">
+          <div class="contacts__info">
+            <h2 class="h2" id="contactsTitle">Контакты</h2>
+            <dl class="contact-list">
+              <div>
+                <dt>Адрес</dt>
+                <dd>Город, улица, дом<br /><span class="muted">Адрес укажет клиника</span></dd>
+              </div>
+              <div>
+                <dt>Телефон</dt>
+                <dd><a href="tel:+70000000000">+7 (000) 000-00-00</a></dd>
+              </div>
+              <div>
+                <dt>Почта</dt>
+                <dd><a href="mailto:hello@example.com">hello@example.com</a></dd>
+              </div>
+              <div>
+                <dt>Часы работы</dt>
+                <dd>Пн–Сб, 9:00–21:00<br /><span class="muted">Воскресенье — выходной</span></dd>
+              </div>
+            </dl>
+            <a class="btn btn--primary" href="#booking">Записаться на&nbsp;приём</a>
+          </div>
+
+          <figure class="map" aria-label="Схема расположения клиники (заглушка)">
+            <svg viewBox="0 0 640 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="640" height="460" class="map__bg" />
+              <path class="map__park" d="M420 40h170v120H420z" />
+              <path class="map__water" d="M-10 360c90-30 170 20 260-5s170-60 250-20 120 40 150 30v110H-10Z" />
+              <g class="map__road map__road--main">
+                <path d="M-10 230h660" />
+                <path d="M300-10v480" />
+              </g>
+              <g class="map__road">
+                <path d="M-10 110h660M-10 320h660M120-10v480M470-10v480M560-10v480M200-10v480" />
+              </g>
+              <g class="map__blocks">
+                <rect x="132" y="122" width="56" height="96" rx="6" />
+                <rect x="212" y="122" width="76" height="96" rx="6" />
+                <rect x="312" y="122" width="146" height="96" rx="6" />
+                <rect x="132" y="242" width="156" height="66" rx="6" />
+                <rect x="312" y="242" width="146" height="66" rx="6" />
+                <rect x="482" y="242" width="66" height="66" rx="6" />
+                <rect x="12" y="122" width="96" height="96" rx="6" />
+                <rect x="12" y="242" width="96" height="66" rx="6" />
+                <rect x="212" y="12" width="76" height="86" rx="6" />
+                <rect x="312" y="12" width="96" height="86" rx="6" />
+              </g>
+            </svg>
+            <div class="map__pin">
+              <span class="map__pin-dot" aria-hidden="true"></span>
+              <span class="map__pin-label">ORIS DENTAL</span>
+            </div>
+            <figcaption class="map__caption">Схема-заглушка. В&nbsp;рабочей версии здесь будет интерактивная карта с&nbsp;адресом клиники.</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ 11. Footer ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="logo logo--light" href="#top" aria-label="ORIS DENTAL — наверх">
+            <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="13.5" fill="none" stroke="currentColor" stroke-width="2" />
+              <path class="logo__tooth" d="M10.6 12.6c0-1.8 1.5-2.9 3.3-2.9.9 0 1.5.3 2.1.6.6-.3 1.2-.6 2.1-.6 1.8 0 3.3 1.1 3.3 2.9 0 1.5-.5 2.6-.9 4-.5 2.2-.5 6.1-1.7 6.1-1 0-.9-3-1.8-3s-.8 3-1.8 3c-1.2 0-1.2-3.9-1.7-6.1-.4-1.4-.9-2.5-.9-4Z" />
+            </svg>
+            <span class="logo__word">ORIS<span>DENTAL</span></span>
+          </a>
+          <nav aria-label="Навигация в подвале">
+            <ul class="footer__nav">
+              <li><a href="#about">О клинике</a></li>
+              <li><a href="#services">Услуги</a></li>
+              <li><a href="#tech">Технологии</a></li>
+              <li><a href="#team">Специалисты</a></li>
+              <li><a href="#faq">Вопросы</a></li>
+              <li><a href="#booking">Запись</a></li>
+              <li><a href="#contacts">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__warn">Имеются противопоказания. Необходима консультация специалиста.</p>
+          <p>ORIS DENTAL — концептуальный проект для портфолио веб-студии. Название, контакты, тексты и&nbsp;изображения условны и&nbsp;не&nbsp;относятся к&nbsp;реальной клинике. Информация на&nbsp;сайте носит ознакомительный характер и&nbsp;не&nbsp;заменяет консультацию врача.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Подробности услуги -->
+    <dialog class="drawer" id="serviceDrawer" aria-labelledby="drawerTitle">
+      <div class="drawer__inner">
+        <button class="drawer__close" type="button" data-close aria-label="Закрыть">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" /></svg>
+        </button>
+        <p class="drawer__dir" id="drawerDir"></p>
+        <h2 class="drawer__title" id="drawerTitle"></h2>
+        <p class="drawer__short" id="drawerShort"></p>
+        <h3>Когда обращаются</h3>
+        <ul class="ticks" id="drawerWhen"></ul>
+        <h3>Как проходит</h3>
+        <ol class="drawer__steps" id="drawerSteps"></ol>
+        <dl class="drawer__meta">
+          <div>
+            <dt>Количество визитов</dt>
+            <dd id="drawerVisits"></dd>
+          </div>
+          <div>
+            <dt>Стоимость</dt>
+            <dd>Врач назовёт после осмотра</dd>
+          </div>
+        </dl>
+        <div class="drawer__actions">
+          <button class="btn btn--primary btn--lg" type="button" id="drawerBook">Записаться на&nbsp;эту услугу</button>
+        </div>
+      </div>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
